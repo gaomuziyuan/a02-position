@@ -1,0 +1,39 @@
+a {
+	text-decoration: none;
+}
+nav { background-color: rgba(144,134,122,0.5); position: fixed; left: 0; right: 0; /*z-index: -10;*/}
+nav > ul {
+	display: flex; justify-content: space-around; background-color: rgba(144,134,122,0.5);
+}
+ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+ul ul {
+	display: none;
+	background-color: violet;
+}
+li:hover > ul {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+}
+li {
+	padding: 8px;
+	position: relative;
+	white-space: nowrap;
+}
+li:hover {
+	background-color: yellow;
+}
+li:hover ul ul {
+	left: 100%;
+	top: 0;
+}
+
+nav > ul > li:last-of-type ul {
+	text-align: right;
+	right: 0;
+}
